@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Tailwind CSS + Daisy UI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#006cd8',
+                        'secondary-color': '#F9DF8A',
+                        'base-color': '#FFF9F4',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-outfit bg-gray-700">
+
+    <!--          -->
+    <!-- (header) -->
+    <!--          -->
+    <header></header>
+
+    <!--        -->
+    <!-- (main) -->
+    <!--        -->
+    <main class="max-w-md min-h-screen bg-white mx-auto">
+
+        <!--logo section-->
+        <section class="flex flex-col justify-center pt-12">
+            <img class="w-[60%] mx-auto" src="./assets/bg.png" alt="">
+            <img class="w-[80px] absolute left-[46%] top-[10%]" src="./assets/Group.png" alt="">
+        </section>
+
+        <!--login section-->
+        <section class="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-2xl">
+            <form class="card-body">
+
+                <!-- (mobile number) -->
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text text-xl font-semibold">Mobile Number</span>
+                    </label>
+                    <input id="mb-number" type="number" placeholder="A/C Number" class="input input-bordered" value="01010101010" required />
+                </div>
+
+                <!-- (pin) -->
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text text-xl font-semibold">4 Digit Pin</span>
+                    </label>
+                    <input id="pin-number" type="password" placeholder="******" class="input input-bordered" value="1234" required />
+                    <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+                    </label>
+                </div>
+
+                <!-- (login button) -->
+                <div id="login-btn" class="form-control mt-6">
+                    <button class="btn bg-primary-color text-white">Login</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!--          -->
+    <!-- (footer) -->
+    <!--          -->
+    <footer></footer>
+
+
+    <!--scripts-->
+    <script src="./scripts/login.js"></script>
+
+</body>
+
+</html>

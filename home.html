@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+
+    <!--FlatIcon link-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Tailwind CSS + Daisy UI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#006cd8',
+                        'secondary-color': '#F9DF8A',
+                        'base-color': '#FFF9F4',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-outfit bg-gray-700">
+
+    <!--          -->
+    <!-- (header) -->
+    <!--          -->
+    <header></header>
+
+    <!--        -->
+    <!-- (main) -->
+    <!--        -->
+    <main class="max-w-md min-h-screen bg-white mx-auto">
+
+        <!-- (header) -->
+        <nav class="flex justify-around py-4 shadow-lg">
+
+            <!--left-->
+            <div class="flex">
+                <img class="w-12 h-12" src="./assets/Group.png" alt="">
+
+                <div>
+                    <h1 class="balance-layout font-semibold text-2xl">$ <span class="balance">45000</span> </h1>
+                    <p class="text-sm text-slate-500">Available Balance</p>
+                </div>
+            </div>
+
+            <!--right-->
+            <div>
+                <button class="btn bg-primary-color text-white">Log Out</button>
+            </div>
+
+        </nav>
+
+
+
+    </main>
+
+    <!--          -->
+    <!-- (footer) -->
+    <!--          -->
+    <footer></footer>
+
+
+    <!--scripts-->
+    <script src="./scripts/login.js"></script>
+
+</body>
+
+</html>

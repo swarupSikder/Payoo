@@ -72,6 +72,131 @@
 
 
 
+
+
+
+
+        <!-- (welcome) -->
+        <section class="my-8 mx-4">
+
+            <!--welcome head-->
+            <div class="flex justify-start items-center space-x-2">
+                <img class="w-10 h-10" src="./assets/fire.png" alt="">
+                <h1 class="text-2xl font-semibold">Welcome to Payoo!</h1>
+            </div>
+
+            <!--welcome text-->
+            <p class="text-slate-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quibusdam nobis
+                debitis quisquam vel ex tempora atque porro ipsa veniam.</p>
+        </section>
+
+
+
+
+
+
+
+
+        <!--transaction options-->
+        <section class="my-8 mx-4 grid grid-cols-3 gap-2">
+
+            <!--option (1)-->
+            <div id="add-money" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+                <img class="w-8 h-8" src="./assets/money1.png" alt="">
+                <h1 class="text-sm font-semibold text-slate-600">Add Money</h1>
+            </div>
+
+            <!--option (2)-->
+            <div id="cash-out" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+                <img class="w-8 h-8" src="./assets/purse1.png" alt="">
+                <h1 class="text-sm font-semibold text-slate-600">Cashout</h1>
+            </div>
+
+            <!--option (3)-->
+            <div id="transfer-money"
+                class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+                <img class="w-8 h-8" src="./assets/money1.png" alt="">
+                <h1 class="text-sm font-semibold text-slate-600">Transfer Money</h1>
+            </div>
+
+            <!--option (4)-->
+            <div id="get-bonus" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+                <img class="w-8 h-8" src="./assets/money1.png" alt="">
+                <h1 class="text-sm font-semibold text-slate-600">Get Bonus</h1>
+            </div>
+
+            <!--option (5)-->
+            <div id="pay-bill" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+                <img class="w-8 h-8" src="./assets/money1.png" alt="">
+                <h1 class="text-sm font-semibold text-slate-600">Pay Bill</h1>
+            </div>
+
+            <!--option (6)-->
+            <div id="transactions" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+                <img class="w-8 h-8" src="./assets/money1.png" alt="">
+                <h1 class="text-sm font-semibold text-slate-600">Transactions</h1>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+        <!--         -->
+        <!--add-money-->
+        <!--         -->
+        <section class="my-8 mx-4">
+
+            <!--section title-->
+            <h1 class="text-xl font-semibold mb-4">Add Money</h1>
+
+
+            <!--main content-->
+            <div class="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-2xl">
+                <form class="card-body">
+
+                    <!-- (mobile number) -->
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Mobile Number</span>
+                        </label>
+                        <input id="mb-number" type="number" placeholder="A/C Number" class="input input-bordered"
+                            value="01010101010" required />
+                    </div>
+
+                    <!-- (amount-to-add) -->
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Amount to add</span>
+                        </label>
+                        <input id="amount-to-add" type="number" placeholder="$0" class="input input-bordered"
+                            value="" required />
+                    </div>
+
+                    <!-- (pin) -->
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">4 Digit Pin</span>
+                        </label>
+                        <input id="pin-number" type="password" placeholder="******" class="input input-bordered"
+                            value="1234" required />
+                        <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+                        </label>
+                    </div>
+
+                    <!-- (login button) -->
+                    <div id="login-btn" class="form-control mt-6">
+                        <button class="btn bg-primary-color text-white">Login</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <!--          -->

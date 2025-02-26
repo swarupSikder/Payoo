@@ -1,0 +1,7 @@
+.option-border-focused {
+    border: 2px solid #006cd8;
+}
+
+.option-border-unfocused {
+    border: 2px solid rgb(216, 216, 216);
+}

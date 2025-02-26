@@ -12,6 +12,9 @@ function validCredentials(ac_number, pin) {
     }
 }
 
+//----------------//
+//    Add Money   //
+//----------------//
 document.getElementById('add-money-btn').addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -27,6 +30,33 @@ document.getElementById('add-money-btn').addEventListener('click', function (eve
         let amount = document.getElementById('balance');
         let amountConverted = parseFloat(amount.innerText);
         amount.innerText = amountConverted + parseFloat(amountToAdd);
+    }
+    else {
+        alert('plz enter valid info');
+    }
+});
+
+
+
+
+
+
+
+
+//---------------//
+//    Cash Out   //
+//---------------//
+document.getElementById('withdraw-money-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const agentNumber = document.getElementById('agent-number').value;
+    const amountToWithdraw = document.getElementById('amount').value;
+    const pin = document.getElementById('co-pin-number').value;
+
+    if (validCredentials(agentNumber, pin) && parseFloat(amountToWithdraw) >= 0) {
+        let amount = document.getElementById('balance');
+        let amountConverted = parseFloat(amount.innerText);
+        amount.innerText = amountConverted - parseFloat(amountToWithdraw);
     }
     else {
         alert('plz enter valid info');

@@ -101,38 +101,38 @@
         <section class="my-8 mx-4 grid grid-cols-3 gap-2">
 
             <!--option (1)-->
-            <div id="add-money" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+            <div id="add-money-option" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
                 <img class="w-8 h-8" src="./assets/money1.png" alt="">
                 <h1 class="text-sm font-semibold text-slate-600">Add Money</h1>
             </div>
 
             <!--option (2)-->
-            <div id="cash-out" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+            <div id="cash-out-option" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
                 <img class="w-8 h-8" src="./assets/purse1.png" alt="">
                 <h1 class="text-sm font-semibold text-slate-600">Cashout</h1>
             </div>
 
             <!--option (3)-->
-            <div id="transfer-money"
+            <div id="transfer-money-option"
                 class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
                 <img class="w-8 h-8" src="./assets/money1.png" alt="">
                 <h1 class="text-sm font-semibold text-slate-600">Transfer Money</h1>
             </div>
 
             <!--option (4)-->
-            <div id="get-bonus" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+            <div id="get-bonus-option" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
                 <img class="w-8 h-8" src="./assets/money1.png" alt="">
                 <h1 class="text-sm font-semibold text-slate-600">Get Bonus</h1>
             </div>
 
             <!--option (5)-->
-            <div id="pay-bill" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+            <div id="pay-bill-option" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
                 <img class="w-8 h-8" src="./assets/money1.png" alt="">
                 <h1 class="text-sm font-semibold text-slate-600">Pay Bill</h1>
             </div>
 
             <!--option (6)-->
-            <div id="transactions" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
+            <div id="transactions-option" class="border-2 rounded-md p-3 flex flex-col justify-center items-center space-y-2">
                 <img class="w-8 h-8" src="./assets/money1.png" alt="">
                 <h1 class="text-sm font-semibold text-slate-600">Transactions</h1>
             </div>
@@ -149,7 +149,7 @@
         <!--         -->
         <!--add-money-->
         <!--         -->
-        <section class="mt-8 mx-4 pb-8">
+        <section id="add-money-layout" class="mt-8 mx-4 pb-8">
 
             <!--section title-->
             <h1 class="text-xl font-semibold mb-4">Add Money</h1>
@@ -181,7 +181,7 @@
                         <label class="label">
                             <span class="label-text">Mobile Number</span>
                         </label>
-                        <input id="mb-number" type="number" placeholder="A/C Number" class="input input-bordered"
+                        <input id="am-mb-number" type="number" placeholder="A/C Number" class="input input-bordered"
                             value="01010101010" required />
                     </div>
 
@@ -199,7 +199,7 @@
                         <label class="label">
                             <span class="label-text">4 Digit Pin</span>
                         </label>
-                        <input id="pin-number" type="password" placeholder="******" class="input input-bordered"
+                        <input id="am-pin-number" type="password" placeholder="******" class="input input-bordered"
                             value="1234" required />
                         <label class="label">
                             <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
@@ -224,6 +224,7 @@
 
     <!--scripts-->
     <script src="./scripts/add_money.js"></script>
+    <script src="./scripts/home.js"></script>
 
 </body>
 

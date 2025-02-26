@@ -15,9 +15,9 @@ function validCredentials(ac_number, pin) {
 document.getElementById('add-money-btn').addEventListener('click', function (event) {
     event.preventDefault();
 
-    const mbNumber = document.getElementById('mb-number').value;
+    const mbNumber = document.getElementById('am-mb-number').value;
     const amountToAdd = document.getElementById('amount-to-add').value;
-    const pin = document.getElementById('pin-number').value;
+    const pin = document.getElementById('am-pin-number').value;
 
     // console.log(mbNumber);
     // console.log(amountToAdd);
